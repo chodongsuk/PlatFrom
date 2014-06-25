@@ -8,14 +8,14 @@ PlatFrom
 Developed By
 ============
 
-* Cho Dong suk - <lab2734@gmail.com>
+* ChoDongsuk - <lab2734@gmail.com>
 
 
 
 License
 =======
 
-    Copyright 2012 Jake Wharton
+    Copyright 2014 ChodongSuk
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
