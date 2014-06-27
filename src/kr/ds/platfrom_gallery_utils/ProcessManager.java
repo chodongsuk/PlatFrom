@@ -27,13 +27,13 @@ public class ProcessManager {
 		return ProcessManager.instance;
 	}
 
-	/** * Activity Ãß°¡ Method * @param activity */
+	/** * Activity ì¶”ê°€ Method * @param activity */
 	public void addActivity(Activity activity) {
 		if (!isActivity(activity))
 			mActivityArr.add(activity);
 	}
 
-	/** * Activity »èÁ¦ Method * @param activity */
+	/** * Activity ì‚­ì œ Method * @param activity */
 	public void deleteActivity(Activity activity) {
 		if (isActivity(activity)) {
 			activity.finish();
@@ -41,7 +41,7 @@ public class ProcessManager {
 		}
 	}
 
-	/** * Parameter·Î µé¾î¿Â Activity°¡ ÇöÀç ¸®½ºÆ®¿¡ ÀÖ´ÂÁö Ã¼Å©ÇÏ´Â Method 
+	/** * Parameterë¡œ ë“¤ì–´ì˜¨ Activityê°€ í˜„ì¬ ë¦¬ìŠ¤íŠ¸ì— ìˆëŠ”ì§€ ì²´í¬í•˜ëŠ” Method 
 	 * * @param activity * @return */
 	public boolean isActivity(Activity activity) {
 		for (Activity chkActivity : mActivityArr) {
@@ -51,7 +51,7 @@ public class ProcessManager {
 		return false;
 	}
 
-	/** * µî·ÏµÇ¾î ÀÖ´Â ¸ğµç Activity Á¾·á */
+	/** * ë“±ë¡ë˜ì–´ ìˆëŠ” ëª¨ë“  Activity ì¢…ë£Œ */
 	public void allEndActivity() {
 		for (Activity activity : mActivityArr) {
 			activity.finish();

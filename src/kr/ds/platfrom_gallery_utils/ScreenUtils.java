@@ -17,19 +17,19 @@ import android.util.TypedValue;
 import android.view.Display;
 import android.view.WindowManager;
 /**
- * ½ºÅ©¸° À¯Æ¿</p>
- * dipToInt(int number, Context context) - dip ¿¡ µû¸¥ ÇÈ¼¿ º¯È¯</p>
- * ScreenWidth(Context context) - °¡·Î ÇØ»óµµ</p>
- * ScreenHeight(Context context) - ¼¼·Î ÇØ»óµµ</p>
- * Orientation(Context context) - °¡·ÎÀÎÁö ¼¼·ÎÀÎÁö Ã¼Å© </P>
- * MarginWidth(Context context, int widthmargin) - ¿©¹é °¡·Î ÇØ»óµµ </p>
- * MarginHeight(Context context, int heightmargin) - ¿©¹é ¼¼·Î ÇØ»óµµ </p>
- * getBitmapOfWidth(Context context, int id) - ÀÌ¹ÌÁö °¡·Î »çÀÌÁî </p>
- * getBitmapOfHeight(Context context, int id) - ÀÌ¹ÌÁö ¼¼·Î »çÀÌÁî </p>
- * BitmapRotate(Bitmap b, int degrees) - ÀÌ¹ÌÁöºñÀ² º¯È¯</p>
- * isTablet(Context context) - ÅÂºí¸´ÀÎÁö Ã¼Å©</p>
- * isCheckDevice(String[] device) - µğ¹ÙÀÌ½º Ã¼Å© </p>
- * VersionCode(Context context) - ¹öÁ¯ÄÚµå </p>
+ * ìŠ¤í¬ë¦° ìœ í‹¸</p>
+ * dipToInt(int number, Context context) - dip ì— ë”°ë¥¸ í”½ì…€ ë³€í™˜</p>
+ * ScreenWidth(Context context) - ê°€ë¡œ í•´ìƒë„</p>
+ * ScreenHeight(Context context) - ì„¸ë¡œ í•´ìƒë„</p>
+ * Orientation(Context context) - ê°€ë¡œì¸ì§€ ì„¸ë¡œì¸ì§€ ì²´í¬ </P>
+ * MarginWidth(Context context, int widthmargin) - ì—¬ë°± ê°€ë¡œ í•´ìƒë„ </p>
+ * MarginHeight(Context context, int heightmargin) - ì—¬ë°± ì„¸ë¡œ í•´ìƒë„ </p>
+ * getBitmapOfWidth(Context context, int id) - ì´ë¯¸ì§€ ê°€ë¡œ ì‚¬ì´ì¦ˆ </p>
+ * getBitmapOfHeight(Context context, int id) - ì´ë¯¸ì§€ ì„¸ë¡œ ì‚¬ì´ì¦ˆ </p>
+ * BitmapRotate(Bitmap b, int degrees) - ì´ë¯¸ì§€ë¹„ìœ¨ ë³€í™˜</p>
+ * isTablet(Context context) - íƒœë¸”ë¦¿ì¸ì§€ ì²´í¬</p>
+ * isCheckDevice(String[] device) - ë””ë°”ì´ìŠ¤ ì²´í¬ </p>
+ * VersionCode(Context context) - ë²„ì ¼ì½”ë“œ </p>
  * @author chodongsuk
  * @since 2012.10.22
  * @version 1.0 
@@ -41,7 +41,7 @@ public class ScreenUtils {
 	}
 	public int dipToInt(int number) {
 		/*
-		 * Çüº¯È¯
+		 * í˜•ë³€í™˜
 		 */
 		int num = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
 				number, _Context.getResources().getDisplayMetrics());
@@ -70,7 +70,7 @@ public class ScreenUtils {
 
 	// public static int ScreenOrientation(Context context){
 	// /*
-	// * ºñÃßÃµ °¢µµÃ¼Å© 2.1ÀÌÇÏ
+	// * ë¹„ì¶”ì²œ ê°ë„ì²´í¬ 2.1ì´í•˜
 	// */
 	// WindowManager wm = (WindowManager)
 	// context.getSystemService(Context.WINDOW_SERVICE);
@@ -144,7 +144,7 @@ public class ScreenUtils {
 	}
 
 	/*
-	 * ¹öÀüÃ¼Å©
+	 * ë²„ì „ì²´í¬
 	 * http://developer.android.com/reference/android/os/Build.VERSION_CODES
 	 * .html
 	 */
@@ -154,7 +154,7 @@ public class ScreenUtils {
 	}
 
 	/*
-	 * µğ¹ÙÀÌ½º Ã¼Å©
+	 * ë””ë°”ì´ìŠ¤ ì²´í¬
 	 */
 	public  boolean isCheckDevice(String[] device) {
 		String DEVICE = android.os.Build.MODEL;
@@ -170,7 +170,7 @@ public class ScreenUtils {
 	}
 
 	/*
-	 * ¹öÁ¯Ã¼Å©
+	 * ë²„ì ¼ì²´í¬
 	 */
 	public  int VersionCode() {
 		PackageManager pm;
@@ -180,8 +180,8 @@ public class ScreenUtils {
 		try {
 			pm = _Context.getPackageManager();
 			packageInfo = pm.getPackageInfo(_Context.getPackageName(), 0);
-			VersionName = packageInfo.versionName; // ¹öÀü ³×ÀÓ
-			VersionCode = packageInfo.versionCode; // ¹öÀü
+			VersionName = packageInfo.versionName; // ë²„ì „ ë„¤ì„
+			VersionCode = packageInfo.versionCode; // ë²„ì „
 
 		} catch (NameNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -191,7 +191,7 @@ public class ScreenUtils {
 	}
 	
 	/*
-	 * ºñÀ² °è»ê
+	 * ë¹„ìœ¨ ê³„ì‚°
 	 */
 	public int ratioyImageView(float xratio, float yratio, int margin){
 		int setwidth ;
@@ -200,12 +200,12 @@ public class ScreenUtils {
 	}
 	
 	/*
-	 * ÇØ»óµµº° ±¸ºĞ 
+	 * í•´ìƒë„ë³„ êµ¬ë¶„ 
 	 */
 	public boolean AlignmentWidthBoolean(Context context){
-		/* ÇØ»óµµº° ±¸ºĞ
-		 * 1232(10.1ÀÎÄ¡)
-		 * ÇØ»óµµ ºÎ¿ï¸° °¡·Î ÇØ»óµµ
+		/* í•´ìƒë„ë³„ êµ¬ë¶„
+		 * 1232(10.1ì¸ì¹˜)
+		 * í•´ìƒë„ ë¶€ìš¸ë¦° ê°€ë¡œ í•´ìƒë„
 		 */
 		boolean Alignment;
 		int gheight = ScreenHeight();

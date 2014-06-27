@@ -19,7 +19,7 @@ public class GalleryClass {
 	
 	/**
 	 * Total 
-	 * Æú´õ ¾øÀÌ Á¤·Ä.
+	 * í´ë” ì—†ì´ ì •ë ¬.
 	 */
 	public Map<String, List<String>> getTotalImage() {
 		Map<String, List<String>> images = new HashMap<String, List<String>>();
@@ -33,7 +33,7 @@ public class GalleryClass {
 			    cursor.moveToFirst();
 			    for(int i = 0; i < length; ++i){
 			        String data = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Thumbnails.DATA)); 
-			        String key = "/ÀüÃ¼º¸±â"; //ÀÓ½Ã ¼³Á¤ ÇÏ±â..
+			        String key = "/ì „ì²´ë³´ê¸°"; //ì„ì‹œ ì„¤ì • í•˜ê¸°..
 			        if(i == 0){
 			        	images.put(key, dir);
 			        }
@@ -49,11 +49,11 @@ public class GalleryClass {
 	}
 	/**
 	 * Map<String, List<String>> 
-	 * Æú´õ, ¹è¿­ 
+	 * í´ë”, ë°°ì—´ 
 	 */
 	public Map<String, List<String>> getFolderImage(Map<String, List<String>> images){
 		/*
-		for(String s : images.keySet()){//set »Ì¾Æ³»±â.
+		for(String s : images.keySet()){//set ë½‘ì•„ë‚´ê¸°.
 			Log.i("TEST",s+"");
 			Log.i("TEST",images.get(s)+"");
 		}
@@ -66,7 +66,7 @@ public class GalleryClass {
 		    cursor.moveToFirst();
 		    for(int i = 0; i < length; ++i){
 		        String data = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Thumbnails.DATA)); 
-		        // '/ÆÄÀÏ¸í.È®ÀåÀÚ' ¸¦ Àß¶ó³»°í °æ·Î¸¸
+		        // '/íŒŒì¼ëª….í™•ì¥ì' ë¥¼ ì˜ë¼ë‚´ê³  ê²½ë¡œë§Œ
 		        String key = data.replaceFirst("/.[^/]+$", "").split("/")[data.replaceFirst("/.[^/]+$", "").split("/").length-1];
 		        List<String> dir = images.get(key);
 		        if(dir == null){

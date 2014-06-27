@@ -34,7 +34,7 @@ public class GalleryBaseAdapter extends BaseAdapter{
 		mKeys = mData.keySet().toArray(new String[mData.size()]);
 		mInflater = LayoutInflater.from(mContext);
 		mViewArray = new SparseArray<WeakReference<View>>(mData.size());
-		// Ä³½¬ ÃÊ±âÈ­ : Ä³½¬ÀÇ ÃÖ´ë º¸°ü Å©±â 100°³
+		// ìºì‰¬ ì´ˆê¸°í™” : ìºì‰¬ì˜ ìµœëŒ€ ë³´ê´€ í¬ê¸° 100ê°œ
 		mCache = new LRUCache<String, Bitmap>(100);
 	}
 

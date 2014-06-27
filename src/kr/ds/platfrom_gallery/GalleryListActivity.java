@@ -51,7 +51,7 @@ public class GalleryListActivity extends Activity {
 		@Override
 		protected Map<String, List<String>> doInBackground(String... params) {
 			// TODO Auto-generated method stub
-			//TreeMapÀ¸·Î Á¤·Ä
+			//TreeMapìœ¼ë¡œ ì •ë ¬
 			mImages = mGallery.getTotalImage();
 			mTreeMapImages = new TreeMap<String, List<String>>(mImages);
 			return mTreeMapImages;

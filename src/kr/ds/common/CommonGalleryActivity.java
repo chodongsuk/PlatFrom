@@ -18,9 +18,9 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class CommonGalleryActivity extends Activity {
-	private int TAKE_CAMERA = 1; // Ä«¸Ş¶ó ¸®ÅÏ ÄÚµå°ª ¼³Á¤
-	private int TAKE_GALLERY = 2; // ¾Ù¹ü¼±ÅÃ¿¡ ´ëÇÑ ¸®ÅÏ ÄÚµå°ª ¼³Á¤
-	private int TAKE_GALLERYMORE = 3; // ¾Ù¹ü¼±ÅÃ¿¡ ´ëÇÑ ¸®ÅÏ ÄÚµå°ª ¼³Á¤
+	private int TAKE_CAMERA = 1; // ì¹´ë©”ë¼
+	private int TAKE_GALLERY = 2; // ê°¤ëŸ¬ë¦¬
+	private int TAKE_GALLERYMORE = 3; // ê°¤ëŸ¬ë¦¬ëª¨ì–´
 	
 	
 	

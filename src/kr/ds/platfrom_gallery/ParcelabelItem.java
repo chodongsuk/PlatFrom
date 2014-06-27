@@ -34,7 +34,7 @@ public class ParcelabelItem implements Parcelable {
 	}
 
 	@Override
-	public void writeToParcel(Parcel arg0, int arg1) { // µ¥ÀÌÅÍ³Ö±â
+	public void writeToParcel(Parcel arg0, int arg1) { // ë°ì´í„°ë„£ê¸°
 		// TODO Auto-generated method stub
 		arg0.writeList(mItem);
 	}
@@ -42,12 +42,12 @@ public class ParcelabelItem implements Parcelable {
 	/**
 	 * @author sungsik81
 	 * 
-	 *         Parcelable.Creator<T> Å¬·¡½º´Â createFromParcel() °ú newArray() ¸Ş¼Ò½º°¡
-	 *         ÇÊ¿äÇÏ´Ù. Parcel·Î ºÎÅÍ °ªÀ» ÀĞ¾î ¿À±â À§ÇØ¼­´Â Parcelable.Creator Interface °¡
-	 *         ÇÊ¿äÇÏ´Ù.
+	 *         Parcelable.Creator<T> í´ë˜ìŠ¤ëŠ” createFromParcel() ê³¼ newArray() ë©”ì†ŒìŠ¤ê°€
+	 *         í•„ìš”í•˜ë‹¤. Parcelë¡œ ë¶€í„° ê°’ì„ ì½ì–´ ì˜¤ê¸° ìœ„í•´ì„œëŠ” Parcelable.Creator Interface ê°€
+	 *         í•„ìš”í•˜ë‹¤.
 	 */
-	public static final Parcelable.Creator<ParcelabelItem> CREATOR = new Creator<ParcelabelItem>() { // µ¥ÀÌÅÍ
-																										// °¡Á®¿À±â
+	public static final Parcelable.Creator<ParcelabelItem> CREATOR = new Creator<ParcelabelItem>() { // ë°ì´í„°
+																										// ê°€ì ¸ì˜¤ê¸°
 
 		@Override
 		public ParcelabelItem createFromParcel(Parcel in) {

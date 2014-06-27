@@ -104,7 +104,7 @@ public class GalleryDetailActivity extends Activity {
 				mData2.add(new GalleryDetailHandler());
 				mDetailHandler = mData2.get(mData2.size()-1);
 				mDetailHandler.setSdcardPath(mData.get(i).toString());
-				mDetailHandler.setSeleted(false);//�⺻.
+				mDetailHandler.setSeleted(false);//선택..
 			}
 			return null;
 		}

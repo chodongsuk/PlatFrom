@@ -129,7 +129,7 @@ public class BitmapResize {
         return output;
     }
 	
-	//ÆÄÀÏ À§Ä¡!!
+	//íŒŒì¼ ìœ„ì¹˜!!
 	public static Bitmap decodeFile(String path, Context context, int width, int height) {// you can provide file path here
 		int orientation;
 		try {
@@ -137,7 +137,7 @@ public class BitmapResize {
 				return null;
 			}
 			Bitmap bitmap = decodeSampledBitmapFromResource(path,dipToInt(width,context),dipToInt(height,context));
-			// ÀÌ¹ÌÁö¸¦ »óÈ²¿¡ ¸Â°Ô È¸Àü½ÃÅ²´Ù
+			// ì´ë¯¸ì§€ë¥¼ ìƒí™©ì— ë§ê²Œ íšŒì „ì‹œí‚¨ë‹¤
 			ExifInterface exif = new ExifInterface(path);
 			int exifOrientation = exif.getAttributeInt(
 					ExifInterface.TAG_ORIENTATION,
@@ -176,7 +176,7 @@ public class BitmapResize {
 					bitmap = converted;
 				}
 			} catch (OutOfMemoryError ex) {
-				// ¸Ş¸ğ¸®°¡ ºÎÁ·ÇÏ¿© È¸ÀüÀ» ½ÃÅ°Áö ¸øÇÒ °æ¿ì ±×³É ¿øº»À» ¹İÈ¯ÇÕ´Ï´Ù.
+				// ë©”ëª¨ë¦¬ê°€ ë¶€ì¡±í•˜ì—¬ íšŒì „ì„ ì‹œí‚¤ì§€ ëª»í•  ê²½ìš° ê·¸ëƒ¥ ì›ë³¸ì„ ë°˜í™˜í•©ë‹ˆë‹¤.
 			}
 		}
 		return bitmap;

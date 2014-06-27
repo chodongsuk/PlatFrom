@@ -34,7 +34,7 @@ public class GalleryDetailBaseAdapter extends BaseAdapter{
 		mData = data;
 		mInflater = (LayoutInflater) mContext.getSystemService(mContext.LAYOUT_INFLATER_SERVICE);
 		mViewArray = new SparseArray<WeakReference<View>>(mData.size());
-		// Ä³½¬ ÃÊ±âÈ­ : Ä³½¬ÀÇ ÃÖ´ë º¸°ü Å©±â 100°³
+		// ìºì‰¬ ì´ˆê¸°í™” : ìºì‰¬ì˜ ìµœëŒ€ ë³´ê´€ í¬ê¸° 100ê°œ
 		mCache = new LRUCache<String, Bitmap>(100);
 	}
 
@@ -102,7 +102,7 @@ public class GalleryDetailBaseAdapter extends BaseAdapter{
 	    						selecteds++;
 	    						mData.get(mPosition).setSeleted(true);
 	    					}else{
-	    						Toast.makeText(mContext, GallerySetting.IMAGE_SELECT + "°³ ±îÁö¸¸ ¼±ÅÃÀÌ °¡´É ÇÕ´Ï´Ù.", Toast.LENGTH_SHORT).show();
+	    						Toast.makeText(mContext, GallerySetting.IMAGE_SELECT + "ê°œ ê¹Œì§€ë§Œ ì„ íƒì´ ê°€ëŠ¥ í•©ë‹ˆë‹¤.", Toast.LENGTH_SHORT).show();
 	    					}
 	    				}	
 	    				update();
