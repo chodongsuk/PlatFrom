@@ -25,7 +25,6 @@ public class GalleryBaseAdapter extends BaseAdapter{
 	private LayoutInflater mInflater;
 	private String[] mKeys;
 	private LRUCache mCache;
-	private String test;
 	private Boolean mScrolling = false;
 	private SparseArray<WeakReference<View>> mViewArray;
 

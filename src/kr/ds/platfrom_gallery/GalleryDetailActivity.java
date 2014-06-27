@@ -67,6 +67,8 @@ public class GalleryDetailActivity extends Activity {
 					intent.putExtra("data", datas);
 				}
 				setResult(RESULT_OK, intent);
+				
+				
 				finish();
 				ProcessManager.getInstance().allEndActivity();
 				overridePendingTransition(0, 0);
