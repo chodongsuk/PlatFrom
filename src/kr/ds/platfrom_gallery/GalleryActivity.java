@@ -1,6 +1,5 @@
-package kr.ds.common;
+package kr.ds.platfrom_gallery;
 
-import kr.ds.platfrom_gallery.GalleryListActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -17,7 +16,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class CommonGalleryActivity extends Activity {
+public class GalleryActivity extends Activity {
 	private int TAKE_CAMERA = 1; // 카메라
 	private int TAKE_GALLERY = 2; // 갤러리
 	private int TAKE_GALLERYMORE = 3; // 갤러리모어
